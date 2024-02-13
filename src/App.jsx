@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Frase from "./components/Frase";
 import { useEffect, useState } from "react";
+import logo from "./img/The_Simpsons_yellow_logo.svg.png"
 
 function App() {
   const [personaje, setPersonaje] = useState({});
@@ -49,7 +50,7 @@ function App() {
       <Container className="text-center my-5">
         <Image
           className="losSimpson mt-2"
-          src="img/The_Simpsons_yellow_logo.svg.png"
+          src={logo}
           alt="Logo los Simpson"
           fluid
         />
