@@ -3,7 +3,7 @@ import { Card, Container } from "react-bootstrap";
 
 const Frase = ({personaje}) => {
   return (
-    <Container className=" border border-danger border-3 text-center my-4">
+    <Container className="text-center my-4">
       <h2 className="mt-4">{personaje.character}</h2>
       <hr></hr>
       <img src={personaje.image} alt={personaje.character} />
