@@ -1,7 +1,7 @@
 import { Button, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Frase from "../components/Frase";
+import Frase from "./components/Frase";
 import { useEffect,useState } from "react";
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
         <Frase personaje={personaje}></Frase>
       </section>
       <section className="d-flex justify-content-center mb-5">
-        <Button className="bg-warning border border-warning text-dark fs-5 ">
+        <Button onClick={consultarAPI} className="bg-warning border border-warning text-dark fs-5 ">
           Obtener frase
         </Button>
       </section>
